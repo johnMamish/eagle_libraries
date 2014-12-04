@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.05" altunitdist="mm" altunit="mm"/>
+<grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -170,8 +170,6 @@
 <smd name="P$10" x="2.85" y="-1" dx="0.3" dy="0.8" layer="1" rot="R270"/>
 <smd name="P$11" x="2.85" y="-0.5" dx="0.3" dy="0.8" layer="1" rot="R270"/>
 <smd name="P$17" x="1.425" y="-0.75" dx="1.2" dy="1.2" layer="1" rot="R180"/>
-<wire x1="-0.1" y1="0.3" x2="-0.1" y2="0.7" width="0.127" layer="21"/>
-<wire x1="-0.1" y1="0.7" x2="0.4" y2="0.7" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -248,7 +246,7 @@
 <text x="-2.54" y="5.842" size="1.27" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-5.08" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="MAXIM_MAX_98307">
+<symbol name="MAXIM_MAX9830X">
 <wire x1="0" y1="0" x2="0" y2="-22.86" width="0.254" layer="94"/>
 <wire x1="0" y1="-22.86" x2="25.4" y2="-22.86" width="0.254" layer="94"/>
 <wire x1="25.4" y1="-22.86" x2="25.4" y2="0" width="0.254" layer="94"/>
@@ -362,37 +360,6 @@
 <connects>
 <connect gate="G$1" pin="AN" pad="AN"/>
 <connect gate="G$1" pin="CATH" pad="CATH"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MAXIM_MAX_98307">
-<gates>
-<gate name="G$1" symbol="MAXIM_MAX_98307" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MAXIM_16_TQFN_T1633-5">
-<connects>
-<connect gate="G$1" pin="!SHDN!" pad="P$1"/>
-<connect gate="G$1" pin="C1N" pad="P$15"/>
-<connect gate="G$1" pin="C1P" pad="P$16"/>
-<connect gate="G$1" pin="FB+" pad="P$12"/>
-<connect gate="G$1" pin="FB-" pad="P$9"/>
-<connect gate="G$1" pin="GND" pad="P$2"/>
-<connect gate="G$1" pin="GND_PAD" pad="P$17"/>
-<connect gate="G$1" pin="IN+" pad="P$11"/>
-<connect gate="G$1" pin="IN-" pad="P$10"/>
-<connect gate="G$1" pin="NC" pad="P$8"/>
-<connect gate="G$1" pin="OUT+" pad="P$4"/>
-<connect gate="G$1" pin="OUT-" pad="P$5"/>
-<connect gate="G$1" pin="PGND" pad="P$6"/>
-<connect gate="G$1" pin="PVDD" pad="P$3"/>
-<connect gate="G$1" pin="PVSS" pad="P$14"/>
-<connect gate="G$1" pin="SVSS" pad="P$7"/>
-<connect gate="G$1" pin="VCC" pad="P$13"/>
 </connects>
 <technologies>
 <technology name=""/>
